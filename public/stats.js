@@ -87,6 +87,8 @@ function populateChart(data) {
     },
   });
 
+  console.log(lineChart);
+
   let barChart = new Chart(bar, {
     type: 'bar',
     data: {
@@ -132,6 +134,8 @@ function populateChart(data) {
     },
   });
 
+  console.log(barChart);
+
   let pieChart = new Chart(pie, {
     type: 'pie',
     data: {
@@ -151,6 +155,8 @@ function populateChart(data) {
       },
     },
   });
+
+  console.log(pieChart);
 
   let donutChart = new Chart(pie2, {
     type: 'doughnut',
@@ -172,6 +178,8 @@ function populateChart(data) {
     },
   });
 }
+
+// console.log(donutChart); 
 
 function calculateTotalWeight(data) {
   let totals = [];
