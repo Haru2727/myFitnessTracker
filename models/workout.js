@@ -38,6 +38,7 @@ const WorkoutSchema = new Schema({
       }
     ]
   },{
+    // in order to use virtuals you have to set it to true because by default Mongo does not use the virtuals data
   toJSON: {
     virtuals: true
   }
